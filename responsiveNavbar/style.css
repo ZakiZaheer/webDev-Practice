@@ -58,6 +58,7 @@ header{
 
 .drop-down{
     position: absolute;
+
     top: 100%;
     background-color: #ffffff;
     display: none;
@@ -67,10 +68,15 @@ header{
 
 .drop-down li{
     position: relative;
+    padding-block: 0.5em;
+    text-align: center;
 }
 
 .nav-list li:hover > .drop-down{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    
 }
 
 .sub-drop-down{
@@ -83,7 +89,10 @@ header{
 }
 
 .drop-down li:hover > .sub-drop-down{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    /* padding-block: 0.5em; */
 }
 
 .active-link{
