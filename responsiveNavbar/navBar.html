@@ -3,36 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsove navbar</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header id="header">
+    <header>
         <nav class="nav-bar">
             <div class="nav-logo">
-                Logo
+                LOGO
             </div>
-            
-                <ul class="nav-list" >
-                    <li class="nav-link"><a class="active-link" href="">Home</a></li>
-                    <li class="nav-link"> <a href="">Dropdown</a>
-                        <ul class="drop-down">
-                            <li>item1</li>
-                            <li>subdropDown
-                                <ul class="sub-drop-down">
-                                    <li>SubItem1</li>
-                                    <li>SubItem2</li>
-                                </ul>
-                            </li>
-                            <li>item3</li>
-                        </ul>
-                        
-                    </li>
-                    <li class="nav-link"><a href="">About</a></li>
-                </ul>
+           
+            <ul class="nav-list"> 
+                <li><a href="">Home</a></li>
+                <li>
+                    <a href="">DropDown</a>
+                    <ul class="drop-down">
+                        <li><a href="">Item1</a> </li>
+                        <li>
+                            <a href="">DropDown</a>
+                            <ul class="sub drop-down">
+                                <li><a href="">item1</a></li>
+                                <li><a href="">item2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Item3</a></li>
+                    </ul>
+                </li>
+                
 
-
-            <div class="nav-toggle"></div>
+                <li><a href="">About</a></li>
+            </ul>
+            <div class="nav-toggle">
+                MENU
+            </div>
         </nav>
     </header>
     <script src="navBar.js"></script>

@@ -10,70 +10,47 @@
             padding: 0;
             text-decoration: none;
         }
-        ul{
+        body,html{
+            width: 150%;
+            height: 200%;
+        }
+        body{
+
             display: flex;
-            list-style: none;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .container{
+    
+            background-color: antiquewhite;
+            width: 250px;
+            height: 250px;
+        }
+        .item{
+            width: 50px;
+            height: 50px;
             background-color: aqua;
-            gap: 1em;
+            margin: 2px;
         }
-
-        ul li{
+        .item1{
+            background-color: aquamarine;
             position: relative;
-            text-align: center;
-            
-            
-        }
-
-        .drop-down{
-            position: absolute;
-            width: 100%;
-            left: 0;
-            top: 100%;
-        }
-
-        .drop-down li{
-            width: 100%;
-            text-align: left;
-            
-        }
-
-        .bg-red{
-            background-color: red;
-        }
-        .sub-drop-down{
-
-            display: none;
-            width: 100%;
-            top: 0;
-            position: absolute;
             left: 100%;
         }
-        li:hover ul.drop-down{
-            display: block;
-        }
-
-        li:hover ul.drop-down li:hover ul.sub-drop-down{
-            display: block;
+        .item2{
+            position: relative;
+            background-color: red;
+            
         }
         
     </style>
 </head>
 <body>
-    <ul>
-        <li>Home</li>
-        <li class="bg-red">Dropdown
-            <ul class="drop-down">
-                <li>item1</li>
-                <li class="bg-red">item2
-                    <ul class="sub-drop-down">
-                        <li>Sub-item1</li>
-                        <li>Sub-item2</li>
-                    </ul>
-                </li>
-                <li>item3</li>
-            </ul>
-        </li>
-        <li>About</li>
-    </ul>
+    <div class="container">
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
+    </div>
 </body>
 </html>
