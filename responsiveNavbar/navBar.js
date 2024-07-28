@@ -12,5 +12,5 @@
 const navToggle = document.getElementsByClassName('nav-toggle')[0]
 navToggle.addEventListener('click',()=>{
     const navList = document.getElementsByClassName('nav-list')[0]
-    navList.style.display = 'flex'
+    navList.classList.toggle('toggle')
 })
